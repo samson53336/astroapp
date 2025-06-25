@@ -7,7 +7,7 @@ import { getNumerologyStone } from './numerology.js';
 // Load gemstone data
 let gemstoneMap = {};
 
-fetch("data/gemstones.json")
+fetch("gemstones.json")
   .then(response => response.json())
   .then(data => {
     gemstoneMap = data;
