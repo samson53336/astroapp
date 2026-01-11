@@ -8,6 +8,7 @@ import { getNumerologyStone } from './numerology.js';
 let gemstoneMap = {};
 
 fetch("data/gemstones.json")
+
   .then(response => response.json())
   .then(data => {
     gemstoneMap = data;
@@ -83,3 +84,4 @@ document.getElementById("loader").style.display = "none";
 
   displayResult({ ...result, name, intention });
 });
+
